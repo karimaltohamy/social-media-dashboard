@@ -1,0 +1,66 @@
+$main-color: #7356f1;
+
+// start conetnt_table
+.conetnt_table {
+  margin: 40px 10px 0;
+
+  .head_table {
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgb(234, 234, 234);
+
+    .input_search {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid rgb(221, 221, 221);
+      border-radius: 5px;
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+
+      .icon {
+        padding: 6px 10px;
+        background-color: $main-color;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 20px;
+        }
+      }
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      select {
+        border: 1px solid rgb(213, 213, 213);
+        border-radius: 5px;
+        padding: 3px;
+      }
+
+      .btn_filter {
+        border: none;
+        background-color: $main-color;
+        color: white;
+        border-radius: 5px;
+        padding: 6px 10px;
+      }
+    }
+  }
+}
+// end conetnt_table

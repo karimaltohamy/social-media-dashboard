@@ -1,0 +1,56 @@
+@use "../components/header.scss";
+@use "../components/sidebar.scss";
+@use "../pages/index.scss";
+@use "../pages/handle-table";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: #f1f5f9 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+svg {
+  width: 25px;
+}
+
+// start main
+main {
+  height: 100vh;
+  display: flex;
+  gap: 30px;
+
+  .sidebar {
+    width: 18%;
+    transition: all 0.3s;
+  }
+
+  .content_page {
+    width: 87%;
+    transition: all 0.3s;
+  }
+}
+
+// end main

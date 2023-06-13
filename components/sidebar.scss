@@ -1,0 +1,87 @@
+$main-color: #7356f1;
+
+// start sidebar
+.sidebar {
+  padding: 30px 20px;
+  background-color: $main-color;
+  color: white;
+
+  .header_sidebar {
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 25px;
+      font-weight: 700;
+    }
+
+    img {
+      width: 35px;
+    }
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .link_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &:hover,
+      &.active {
+        background-color: #8f78f4;
+        border-radius: 50px;
+
+        .text {
+          .icon {
+            background-color: white;
+            color: $main-color;
+          }
+        }
+      }
+
+      .text {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            width: 27px;
+            height: 27px;
+          }
+
+          i {
+            font-size: 30px;
+          }
+        }
+
+        span {
+          font-weight: 600;
+          font-size: 17px;
+        }
+      }
+
+      .arrow {
+        svg {
+          width: 17px;
+        }
+      }
+    }
+  }
+}
+// end sidebar
