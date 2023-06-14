@@ -2,9 +2,32 @@ $main-color: #7356f1;
 
 // start sidebar
 .sidebar {
-  padding: 30px 20px;
+  padding: 30px 15px;
   background-color: $main-color;
   color: white;
+
+  &.remove_elemnts {
+    .header_sidebar {
+      h1 {
+        display: none;
+      }
+    }
+
+    .links {
+      .link_item {
+        &.active,
+        &:hover {
+          background-color: transparent;
+        }
+
+        .text {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 
   .header_sidebar {
     margin-bottom: 40px;
@@ -33,6 +56,7 @@ $main-color: #7356f1;
       display: flex;
       align-items: center;
       justify-content: space-between;
+      padding-right: 10px;
 
       &:hover,
       &.active {
@@ -53,16 +77,16 @@ $main-color: #7356f1;
         gap: 10px;
 
         .icon {
-          width: 35px;
-          height: 35px;
+          width: 38px;
+          height: 38px;
           border-radius: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
 
           svg {
-            width: 27px;
-            height: 27px;
+            width: 28px;
+            height: 28px;
           }
 
           i {

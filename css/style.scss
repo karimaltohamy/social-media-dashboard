@@ -1,7 +1,9 @@
-@use "../components/header.scss";
-@use "../components/sidebar.scss";
-@use "../pages/index.scss";
+@use "../components/header";
+@use "../components/sidebar";
+@use "../components/popups";
+@use "../pages/index";
 @use "../pages/handle-table";
+@use "../pages/login";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
@@ -40,16 +42,24 @@ svg {
 main {
   height: 100vh;
   display: flex;
-  gap: 30px;
 
   .sidebar {
-    width: 18%;
+    width: 20%;
     transition: all 0.3s;
+
+    &.close_sidebar {
+      width: 5%;
+    }
   }
 
   .content_page {
-    width: 87%;
+    width: 80%;
     transition: all 0.3s;
+    margin-left: 10px;
+
+    &.close_sidebar {
+      width: 95%;
+    }
   }
 }
 

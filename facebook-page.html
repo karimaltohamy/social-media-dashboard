@@ -16,6 +16,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+    />
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -25,7 +29,7 @@
   <body>
     <main>
       <!-- start sidebar -->
-      <div class="sidebar">
+      <div class="sidebar active">
         <div class="header_sidebar">
           <img src="images/logo-white.png" alt="" />
           <h1>Social Media</h1>
@@ -180,46 +184,412 @@
                     </div>
                   </div>
                 </div>
+                <a href="login.html" class="btn_logout">Logout</a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="conetnt_table">
-          <div class="head_table">
-            <div class="input_search">
-              <div class="icon">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="w-6 h-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                  />
-                </svg>
+        <div class="main_content_tables">
+          <div class="conetnt_table">
+            <div class="head_table">
+              <div class="input_search">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </div>
+                <input type="text" placeholder="Search..." />
               </div>
-              <input type="text" placeholder="Search..." />
+              <div class="info">
+                <select>
+                  <option value="">Pages</option>
+                  <option value="">Groups</option>
+                  <option value="">Places</option>
+                  <option value="">People</option>
+                  <option value="">Posts</option>
+                </select>
+
+                <div class="filter_box">
+                  <button class="btn_filter">Filter</button>
+                  <div class="list_filter">
+                    <span>Filter Pepole</span>
+                    <form action="">
+                      <div class="inputs_radio">
+                        <div class="input_radio">
+                          <input
+                            type="radio"
+                            id="input_radio1"
+                            name="radio_pepole"
+                          />
+                          <label for="input_radio1">City</label>
+                        </div>
+                        <div class="input_radio">
+                          <input
+                            type="radio"
+                            id="input_radio2"
+                            name="radio_pepole"
+                          />
+                          <label for="input_radio2">Education</label>
+                        </div>
+                        <div class="input_radio">
+                          <input
+                            type="radio"
+                            id="input_radio3"
+                            name="radio_pepole"
+                          />
+                          <label for="input_radio3">work</label>
+                        </div>
+                      </div>
+                      <div class="input_search">
+                        <input type="text" placeholder="search..." />
+                        <button class="btn_search">Search</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <button class="btn_login_facebook">Login</button>
+              </div>
             </div>
-            <div class="info">
-              <select>
-                <option value="">Pages</option>
-                <option value="">Groups</option>
-                <option value="">Places</option>
-                <option value="">People</option>
-                <option value="">Posts</option>
-              </select>
-              <button class="btn_filter">Filter</button>
+            <div class="container_table">
+              <table id="example" class="display" style="width: 100%">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Count Friends</th>
+                    <th>Link</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="conetnt_table">
+            <div class="head_table">
+              <div class="input_search">
+                <div class="icon">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                    />
+                  </svg>
+                </div>
+                <input type="text" placeholder="Id" />
+              </div>
+              <div class="info">
+                <select>
+                  <option value="">Posts</option>
+                  <option value="">Groups</option>
+                  <option value="">Places</option>
+                  <option value="">People</option>
+                  <option value="">pages</option>
+                </select>
+
+                <div class="input_num">
+                  <input type="number" value="50" />
+                </div>
+
+                <div class="engagement_box">
+                  <button class="btn_engagement">Engagement</button>
+                  <div class="list_engagement">
+                    <form action="">
+                      <div class="line">
+                        <div class="input_check">
+                          <input type="checkbox" />
+                          <label for="">Comments</label>
+                        </div>
+                        <div class="setting">
+                          <span>Setting</span>
+                          <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                      </div>
+                      <div class="line">
+                        <div class="input_check">
+                          <input type="checkbox" />
+                          <label for="">Tages</label>
+                        </div>
+                        <div class="input_check">
+                          <input type="checkbox" />
+                          <label for="">Shares</label>
+                        </div>
+                      </div>
+                      <div class="mini_title">Reactions</div>
+                      <div class="line">
+                        <div class="input_check">
+                          <input
+                            type="checkbox"
+                            name="all-reaction"
+                            class="input_reaction"
+                          />
+                          <label for="">All</label>
+                        </div>
+                        <div class="input_check">
+                          <input type="checkbox" class="input_reaction" />
+                          <label for="">Cares</label>
+                        </div>
+                      </div>
+                      <div class="line">
+                        <div class="input_check">
+                          <input type="checkbox" class="input_reaction" />
+                          <label for="">Like</label>
+                        </div>
+                        <div class="input_check">
+                          <input type="checkbox" class="input_reaction" />
+                          <label for="">Haha</label>
+                        </div>
+                      </div>
+                      <div class="line">
+                        <div class="input_check">
+                          <input type="checkbox" class="input_reaction" />
+                          <label for="">Love</label>
+                        </div>
+                        <div class="input_check">
+                          <input type="checkbox" class="input_reaction" />
+                          <label for="">Sade</label>
+                        </div>
+                      </div>
+                      <div class="line">
+                        <div class="input_check">
+                          <input type="checkbox" class="input_reaction" />
+                          <label for="">Wow</label>
+                        </div>
+                        <div class="input_check">
+                          <input type="checkbox" class="input_reaction" />
+                          <label for="">Angry</label>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="input_id">
+                  <input type="checkbox" />
+                  <label for="">IDs</label>
+                </div>
+              </div>
+            </div>
+            <div class="container_table">
+              <table id="example2" class="display" style="width: 100%">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Birtday</th>
+                    <th>Relationship</th>
+                    <th>Education</th>
+                    <th>Work</th>
+                    <th>Position</th>
+                    <th>Hometown</th>
+                    <th>Loaction</th>
+                    <th>Link</th>
+                    <th>About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                  </tr>
+                  <tr>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>38</td>
+                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                    <td>1009078003671</td>
+                    <td>System Architect</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- start popup Login facebook -->
+    <div class="overflow"></div>
+    <div class="popup_login_facebook">
+      <i class="fa-regular fa-circle-xmark btn_close_login"></i>
+      <form action="">
+        <h3><i class="fa-brands fa-facebook"></i> Facebook</h3>
+        <div class="input_item">
+          <label for="">Email</label>
+          <input type="email" placeholder="write email" />
+        </div>
+        <div class="input_item">
+          <label for="">Password</label>
+          <input type="password" placeholder="write password" />
+        </div>
+        <button>Login</button>
+      </form>
+    </div>
+    <!-- end popup Login facebook -->
   </body>
+  <script src="js/sidebar.js"></script>
   <script src="js/boxs-header.js"></script>
+  <script src="js/facebook-page.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#example").DataTable({
+        pagingType: "full_numbers",
+      });
+    });
+    $(document).ready(function () {
+      $("#example2").DataTable({
+        pagingType: "full_numbers",
+        scrollX: true,
+      });
+    });
+  </script>
 </html>
