@@ -42,6 +42,19 @@ $main-color: #7356f1;
     align-items: center;
     gap: 20px;
 
+    .btn_login_facebook {
+      border: none;
+      background-color: #100a2b;
+      color: white;
+      border-radius: 3px;
+      padding: 3px 10px;
+      font-size: 15px;
+
+      i {
+        font-size: 14px;
+      }
+    }
+
     .nav_item {
       position: relative;
       .head {

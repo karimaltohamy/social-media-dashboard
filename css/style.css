@@ -53,6 +53,17 @@
           align-items: center;
   gap: 20px;
 }
+.header .right .btn_login_facebook {
+  border: none;
+  background-color: #100a2b;
+  color: white;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-size: 15px;
+}
+.header .right .btn_login_facebook i {
+  font-size: 14px;
+}
 .header .right .nav_item {
   position: relative;
 }
@@ -189,6 +200,9 @@
 .sidebar.remove_elemnts .links .link_item .text span {
   display: none;
 }
+.sidebar.remove_elemnts .links .link_item i {
+  display: none;
+}
 .sidebar .header_sidebar {
   margin-bottom: 40px;
   text-align: center;
@@ -229,6 +243,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 10px;
+  cursor: pointer;
 }
 .sidebar .links .link_item:hover, .sidebar .links .link_item.active {
   background-color: #8f78f4;
@@ -272,8 +287,19 @@
   font-weight: 600;
   font-size: 17px;
 }
-.sidebar .links .link_item .arrow svg {
-  width: 17px;
+.sidebar .links .list {
+  margin-left: 30px;
+  margin-top: 3px;
+  display: none;
+}
+.sidebar .links .list.open {
+  display: block;
+}
+.sidebar .links .list li:not(:last-child) {
+  margin-bottom: 8px;
+}
+.sidebar .links .list li i {
+  font-size: 14px;
 }
 
 .overflow {
@@ -372,7 +398,16 @@
           box-shadow: 0 0 10px rgb(234, 234, 234);
   margin-bottom: 40px;
 }
-.conetnt_table .head_table .input_search {
+.conetnt_table .head_table .main_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+.conetnt_table .head_table .main_head .input_search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -383,12 +418,12 @@
   border: 1px solid rgb(221, 221, 221);
   border-radius: 5px;
 }
-.conetnt_table .head_table .input_search input {
+.conetnt_table .head_table .main_head .input_search input {
   background-color: transparent;
   border: none;
   outline: none;
 }
-.conetnt_table .head_table .input_search .icon {
+.conetnt_table .head_table .main_head .input_search .icon {
   padding: 6px 10px;
   background-color: #7356f1;
   border-top-left-radius: 5px;
@@ -404,8 +439,24 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.conetnt_table .head_table .input_search .icon svg {
+.conetnt_table .head_table .main_head .input_search .icon svg {
   width: 20px;
+}
+.conetnt_table .head_table .main_head .btn_export,
+.conetnt_table .head_table .main_head .btn_import {
+  border: none;
+  background-color: #100a2b;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+.conetnt_table .head_table .main_head .btn_export i,
+.conetnt_table .head_table .main_head .btn_import i {
+  font-size: 14px;
+}
+.conetnt_table .head_table .main_head .btn_import {
+  background-color: #7356f1;
 }
 .conetnt_table .head_table .info {
   display: -webkit-box;
@@ -439,7 +490,7 @@
   background-color: #7356f1;
   color: white;
   border-radius: 5px;
-  padding: 6px 10px;
+  padding: 5px 10px;
 }
 .conetnt_table .head_table .info .filter_box .list_filter,
 .conetnt_table .head_table .info .filter_box .list_engagement,
@@ -566,13 +617,6 @@
 .conetnt_table .head_table .info .engagement_box .list_engagement .mini_title {
   font-weight: 500;
   font-size: 15px;
-}
-.conetnt_table .head_table .info .btn_login_facebook {
-  border: none;
-  background-color: #100a2b;
-  color: white;
-  border-radius: 5px;
-  padding: 6px 10px;
 }
 .conetnt_table .container_table {
   margin-top: 30px;

@@ -19,32 +19,56 @@ $main-color: #7356f1;
     box-shadow: 0 0 10px rgb(234, 234, 234);
     margin-bottom: 40px;
 
-    .input_search {
+    .main_head {
       display: flex;
       align-items: center;
-      gap: 5px;
-      border: 1px solid rgb(221, 221, 221);
-      border-radius: 5px;
+      gap: 10px;
 
-      input {
-        background-color: transparent;
-        border: none;
-        outline: none;
-      }
-
-      .icon {
-        padding: 6px 10px;
-        background-color: $main-color;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-        color: white;
+      .input_search {
         display: flex;
         align-items: center;
-        justify-content: center;
+        gap: 5px;
+        border: 1px solid rgb(221, 221, 221);
+        border-radius: 5px;
 
-        svg {
-          width: 20px;
+        input {
+          background-color: transparent;
+          border: none;
+          outline: none;
         }
+
+        .icon {
+          padding: 6px 10px;
+          background-color: $main-color;
+          border-top-left-radius: 5px;
+          border-bottom-left-radius: 5px;
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            width: 20px;
+          }
+        }
+      }
+
+      .btn_export,
+      .btn_import {
+        border: none;
+        background-color: #100a2b;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 10px;
+        font-size: 15px;
+
+        i {
+          font-size: 14px;
+        }
+      }
+
+      .btn_import {
+        background-color: $main-color;
       }
     }
 
@@ -77,7 +101,7 @@ $main-color: #7356f1;
           background-color: $main-color;
           color: white;
           border-radius: 5px;
-          padding: 6px 10px;
+          padding: 5px 10px;
         }
 
         .list_filter,
@@ -177,14 +201,6 @@ $main-color: #7356f1;
             font-size: 15px;
           }
         }
-      }
-
-      .btn_login_facebook {
-        border: none;
-        background-color: #100a2b;
-        color: white;
-        border-radius: 5px;
-        padding: 6px 10px;
       }
     }
   }

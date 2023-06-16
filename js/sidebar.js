@@ -34,3 +34,15 @@ window.addEventListener("resize", () => {
     contentPage.classList.remove("close_sidebar");
   }
 });
+
+// list links
+const items = document.querySelectorAll(".mini_list .link_item");
+const lists = document.querySelectorAll(".mini_list .list");
+
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    let num = item.getAttribute("data-num");
+
+    document.querySelector(`.list${num}`).classList.toggle("open");
+  });
+});
