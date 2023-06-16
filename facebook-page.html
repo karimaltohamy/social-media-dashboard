@@ -29,6 +29,7 @@
   <body>
     <main>
       <!-- start sidebar -->
+      <div class="overflow_sidebar"></div>
       <div class="sidebar active">
         <div class="header_sidebar">
           <img src="images/logo-white.png" alt="" />
@@ -142,7 +143,7 @@
                 </div>
               </div>
             </div>
-            <div class="nav_item">
+            <div class="nav_item notfication">
               <div class="head">
                 <div class="icon">
                   <svg
@@ -583,6 +584,7 @@
     $(document).ready(function () {
       $("#example").DataTable({
         pagingType: "full_numbers",
+        scrollX: true,
       });
     });
     $(document).ready(function () {

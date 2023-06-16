@@ -322,4 +322,129 @@ $main-color: #7356f1;
     }
   }
 }
+
+@media (max-width: 991px) {
+  .conetnt_table {
+    margin: 20px 10px 0;
+
+    .head_table {
+      padding: 8px;
+      margin-bottom: 30px;
+      flex-direction: column;
+      gap: 10px;
+
+      .input_search {
+        .icon {
+          padding: 5px 8px;
+
+          svg {
+            width: 19px;
+          }
+        }
+
+        input {
+          font-size: 14px;
+        }
+      }
+
+      .info {
+        gap: 10px;
+
+        select {
+          padding: 2px;
+          font-size: 14px;
+        }
+
+        .input_num {
+          input {
+            padding: 2px;
+            font-size: 14px;
+            width: 45px;
+          }
+        }
+
+        .filter_box,
+        .engagement_box {
+          .btn_filter,
+          .btn_engagement {
+            padding: 3px 8px;
+            font-size: 13px;
+          }
+        }
+
+        .btn_login_facebook {
+          padding: 3px 8px;
+          font-size: 13px;
+        }
+      }
+    }
+
+    .container_table {
+      padding: 8px;
+
+      .dataTables_wrapper {
+        .dataTables_length {
+          label {
+            font-size: 14px;
+
+            select {
+              padding: 4px;
+            }
+          }
+        }
+
+        .dataTables_filter {
+          label {
+            font-size: 14px;
+
+            input {
+              border-radius: 4px;
+              padding: 1px;
+            }
+          }
+        }
+
+        table {
+          thead {
+            th {
+              font-size: 14px;
+              padding: 5px;
+            }
+          }
+
+          tbody {
+            td {
+              font-size: 14px;
+              padding: 5px;
+            }
+          }
+        }
+
+        .dataTables_info {
+          margin-top: 5px;
+          padding-top: 5px;
+          font-size: 14px;
+        }
+
+        .dataTables_paginate {
+          margin-top: 5px;
+          padding: 5px 0;
+
+          .previous,
+          .next {
+            padding: 3px 10px;
+            font-size: 14px;
+          }
+
+          span {
+            .paginate_button {
+              font-size: 13px;
+              padding: 3px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 // end conetnt_table

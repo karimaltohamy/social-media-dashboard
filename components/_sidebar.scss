@@ -108,4 +108,9 @@ $main-color: #7356f1;
     }
   }
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+  }
+}
 // end sidebar

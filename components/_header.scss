@@ -161,4 +161,23 @@ $main-color: #7356f1;
     }
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 5px 7px;
+    background-color: white;
+
+    .left {
+      .input_search {
+        display: none;
+      }
+    }
+
+    .right {
+      .notfication {
+        display: none;
+      }
+    }
+  }
+}
 // end header
