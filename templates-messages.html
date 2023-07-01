@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>social media project | Facebook</title>
+    <title>social media project | messages list</title>
     <link rel="stylesheet" href="css/style.css" />
     <!-- boostrap -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -16,52 +16,48 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
-    />
     <!-- Boxicons CSS -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/jquery.dataTables.min.css"
+    />
   </head>
   <body>
     <main>
       <!-- start sidebar -->
-      <div class="overflow_sidebar"></div>
-      <div class="sidebar active">
+      <div class="sidebar">
         <div class="header_sidebar">
-          <img src="images/logo-white.png" alt="" />
+          <img src="images/logo-white.png" alt="logo" loading="lazy" />
           <h1>Social Media</h1>
         </div>
         <div class="links">
-          <div class="mini_list">
-            <a href="index.html" class="link_item">
-              <div class="text">
-                <div class="icon">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"
-                    />
-                  </svg>
-                </div>
-                <span>Dashboard</span>
+          <a href="index.html" class="link_item">
+            <div class="text">
+              <div class="icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 01-1.125-1.125v-3.75zM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-8.25zM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 01-1.125-1.125v-2.25z"
+                  />
+                </svg>
               </div>
-            </a>
-          </div>
-
+              <span>Dashboard</span>
+            </div>
+          </a>
           <div class="mini_list">
-            <div class="link_item active" data-num="1">
+            <div class="link_item" data-num="1">
               <div class="text">
                 <div class="icon">
                   <svg
@@ -95,7 +91,7 @@
             </ul>
           </div>
           <div class="mini_list">
-            <div class="link_item" data-num="2">
+            <div class="link_item active" data-num="2">
               <div class="text">
                 <div class="icon">
                   <svg
@@ -291,219 +287,64 @@
           </div>
         </div>
 
-        <div class="main_content_tables">
-          <div class="conetnt_table">
-            <div class="head_table">
-              <div class="main_head">
-                <div class="input_search">
-                  <div class="icon">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-6 h-6"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                      />
-                    </svg>
-                  </div>
-                  <input type="text" placeholder="Search..." />
-                </div>
+        <div class="create_template">
+          <div class="head_section">
+            <h3>Profile</h3>
+          </div>
+          <div class="warning alert alert-warning">
+            <li>Customers with the wrong phone will be ignored</li>
+            <li>The group will be created if it does not exist</li>
 
-                <button class="btn_export">
-                  <i class="fa-solid fa-download"></i>
-                  Export
-                </button>
-                <label class="btn_import" for="">
-                  <i class="fa-solid fa-file-import"></i>
-                  Import Id
-                  <input type="file" id="file-import" />
+            <!-- <div class="form-check">
+                <input
+                  class="check_excle"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  موافق
                 </label>
+              </div> -->
+          </div>
+          <div class="form_create_template">
+            <h5>How do I create a template?</h5>
+            <form action="">
+              <div class="input_item">
+                <label for="">template name</label>
+
+                <input type="text" placeholder="Type name of template here" />
               </div>
-              <div class="info">
-                <select>
-                  <option value="">Posts</option>
-                  <option value="">Groups</option>
-                  <option value="">Places</option>
-                  <option value="">People</option>
-                  <option value="">pages</option>
-                </select>
 
-                <div class="input_num">
-                  <input type="number" value="50" />
-                </div>
+              <div class="input_send">
+                <span>send after</span>
+                <input type="number" placeholder="0" />
+                <span>hours</span>
+              </div>
 
-                <div class="engagement_box">
-                  <button class="btn_engagement">Engagement</button>
-                  <div class="list_engagement">
-                    <form action="">
-                      <div class="line">
-                        <div class="input_check">
-                          <input type="checkbox" />
-                          <label for="">Comments</label>
-                        </div>
-                        <div class="setting">
-                          <span>Setting</span>
-                          <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                      </div>
-                      <div class="line">
-                        <div class="input_check">
-                          <input type="checkbox" />
-                          <label for="">Tages</label>
-                        </div>
-                        <div class="input_check">
-                          <input type="checkbox" />
-                          <label for="">Shares</label>
-                        </div>
-                      </div>
-                      <div class="mini_title">Reactions</div>
-                      <div class="line">
-                        <div class="input_check">
-                          <input
-                            type="checkbox"
-                            name="all-reaction"
-                            class="input_reaction"
-                          />
-                          <label for="">All</label>
-                        </div>
-                        <div class="input_check">
-                          <input type="checkbox" class="input_reaction" />
-                          <label for="">Cares</label>
-                        </div>
-                      </div>
-                      <div class="line">
-                        <div class="input_check">
-                          <input type="checkbox" class="input_reaction" />
-                          <label for="">Like</label>
-                        </div>
-                        <div class="input_check">
-                          <input type="checkbox" class="input_reaction" />
-                          <label for="">Haha</label>
-                        </div>
-                      </div>
-                      <div class="line">
-                        <div class="input_check">
-                          <input type="checkbox" class="input_reaction" />
-                          <label for="">Love</label>
-                        </div>
-                        <div class="input_check">
-                          <input type="checkbox" class="input_reaction" />
-                          <label for="">Sade</label>
-                        </div>
-                      </div>
-                      <div class="line">
-                        <div class="input_check">
-                          <input type="checkbox" class="input_reaction" />
-                          <label for="">Wow</label>
-                        </div>
-                        <div class="input_check">
-                          <input type="checkbox" class="input_reaction" />
-                          <label for="">Angry</label>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
+              <div class="select_lang">
+                <div class="input_radio">
+                  <label for="en">Arabic</label>
+                  <input type="radio" id="ar" name="fav_language" />
                 </div>
-                <div class="input_id">
-                  <input type="checkbox" />
-                  <label for="">IDs</label>
+                <div class="input_radio">
+                  <label for="en">English</label>
+                  <input type="radio" id="en" name="fav_language" />
                 </div>
               </div>
-            </div>
-            <div class="container_table">
-              <table id="example2" class="display" style="width: 100%">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Mobile</th>
-                    <th>Email</th>
-                    <th>Gender</th>
-                    <th>Birtday</th>
-                    <th>Relationship</th>
-                    <th>Education</th>
-                    <th>Work</th>
-                    <th>Position</th>
-                    <th>Hometown</th>
-                    <th>Loaction</th>
-                    <th>Link</th>
-                    <th>About</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>38</td>
-                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                  </tr>
-                  <tr>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>38</td>
-                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                  </tr>
-                  <tr>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>38</td>
-                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                  </tr>
-                  <tr>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>38</td>
-                    <td>https://www.facebook.com/ProgrammersCreateLife</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                    <td>1009078003671</td>
-                    <td>System Architect</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
+
+              <div class="input_item">
+                <label for="">template content</label>
+
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Type template here"
+                ></textarea>
+              </div>
+
+              <button class="btn_save">Save template</button>
+            </form>
           </div>
         </div>
       </div>
@@ -528,63 +369,19 @@
     </div>
     <!-- end popup Login facebook -->
 
-    <!-- start popup import -->
-    <div class="popup_import">
-      <div class="head">
-        <h3>Import File</h4>
-        <i class="fa-regular fa-circle-xmark btn_close_import"></i>
-      </div>
-
-      <form action="">
-        <div class="input_item">
-          <label for="">Country Name</label>
-          <input type="text" placeholder="" />
-        </div>
-        <div class="input_file">
-          <label for="file-import"
-            >import <i class="fa-solid fa-file-import"></i
-          ></label>
-          <input type="file" id="file-import" />
-        </div>
-        <button class="btn_add">Add File</button>
-      </form>
-    </div>
-    <!-- end popup import -->
+    <script src="js/main.js"></script>
+    <script src="js/sidebar.js"></script>
+    <script src="js/boxs-header.js"></script>
+    <script src="js/facebook-page.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#example").DataTable({
+          pagingType: "full_numbers",
+          scrollX: true,
+        });
+      });
+    </script>
   </body>
-  <script src="js/main.js"></script>
-  <script src="js/sidebar.js"></script>
-  <script src="js/boxs-header.js"></script>
-  <script src="js/facebook-page.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $("#example").DataTable({
-        pagingType: "full_numbers",
-        scrollX: true,
-      });
-    });
-    $(document).ready(function () {
-      $("#example2").DataTable({
-        pagingType: "full_numbers",
-        scrollX: true,
-      });
-    });
-    const btnImport = document.querySelector(".btn_import")
-    const popupImport = document.querySelector(".popup_import")
-    const btnCloseImport = document.querySelector(".btn_close_import")
-    // const overflow = document.querySelector(".overflow")
-    
-    btnImport.addEventListener("click", () => {
-      popupImport.classList.add("active")
-      overflow.classList.add("active")
-
-    })
-
-    btnCloseImport.addEventListener("click", () => {
-       popupImport.classList.remove("active")
-       overflow.classList.remove("active")
-    })
-
-  </script>
 </html>

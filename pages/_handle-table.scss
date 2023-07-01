@@ -19,39 +19,39 @@ $main-color: #7356f1;
     box-shadow: 0 0 10px rgb(234, 234, 234);
     margin-bottom: 40px;
 
+    .input_search {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      border: 1px solid rgb(221, 221, 221);
+      border-radius: 5px;
+
+      input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+
+      .icon {
+        padding: 6px 10px;
+        background-color: $main-color;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+          width: 20px;
+        }
+      }
+    }
+
     .main_head {
       display: flex;
       align-items: center;
       gap: 10px;
-
-      .input_search {
-        display: flex;
-        align-items: center;
-        gap: 5px;
-        border: 1px solid rgb(221, 221, 221);
-        border-radius: 5px;
-
-        input {
-          background-color: transparent;
-          border: none;
-          outline: none;
-        }
-
-        .icon {
-          padding: 6px 10px;
-          background-color: $main-color;
-          border-top-left-radius: 5px;
-          border-bottom-left-radius: 5px;
-          color: white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          svg {
-            width: 20px;
-          }
-        }
-      }
 
       .btn_export,
       .btn_import {
@@ -61,9 +61,14 @@ $main-color: #7356f1;
         border-radius: 5px;
         padding: 5px 10px;
         font-size: 15px;
+        cursor: pointer;
 
         i {
           font-size: 14px;
+        }
+
+        input {
+          display: none;
         }
       }
 
@@ -90,6 +95,14 @@ $main-color: #7356f1;
           border-radius: 5px;
           padding: 3px;
         }
+      }
+
+      .btn_filter_message {
+        border: none;
+        background-color: $main-color;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 10px;
       }
 
       .filter_box,
