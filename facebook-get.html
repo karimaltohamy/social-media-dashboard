@@ -546,10 +546,49 @@
           ></label>
           <input type="file" id="file-import" />
         </div>
-        <button class="btn_add">Add File</button>
+        <button class="btn_add btn_add_file">Add File</button>
       </form>
     </div>
     <!-- end popup import -->
+
+    <!-- start popup export -->
+    <div class="popup_export">
+      <div class="head">
+        <h3>Export</h3>
+        <i class="fa-solid fa-xmark close_popup_export"></i>
+      </div>
+
+      <form action="">
+        <div class="input_file">
+          <label for="export-file">
+            export <i class="fa-solid fa-file-export"></i>
+          </label>
+          <input type="file" placeholder="" id="export-file" />
+        </div>
+
+        <button class="btn_add">Export</button>
+      </form>
+    </div>
+    <!-- end popup export -->
+
+    <!-- start popup loading -->
+    <div class="popup_loading">
+      <div class="content">
+        <p>برجاء انتظار التحميل</p>
+        <div class="lds-roller">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!-- end popup loading -->
+
   </body>
   <script src="js/main.js"></script>
   <script src="js/sidebar.js"></script>
@@ -574,6 +613,11 @@
     const popupImport = document.querySelector(".popup_import")
     const btnCloseImport = document.querySelector(".btn_close_import")
     // const overflow = document.querySelector(".overflow")
+       const btnExport = document.querySelector(".btn_export");
+    const popupExport = document.querySelector(".popup_export");
+    const closePopupExport = document.querySelector(".close_popup_export");
+    const btnAddFile = document.querySelector(".btn_add_file")
+    const popupLoading = document.querySelector(".popup_loading");
     
     btnImport.addEventListener("click", () => {
       popupImport.classList.add("active")
@@ -586,5 +630,19 @@
        overflow.classList.remove("active")
     })
 
+     btnExport.addEventListener("click", () => {
+      popupExport.classList.add("active");
+       overflow.classList.add("active")
+    });
+
+     closePopupExport.addEventListener("click", () => {
+      popupExport.classList.remove("active");
+         overflow.classList.remove("active")
+    });
+
+    btnAddFile.addEventListener("click", (e) => {
+  e.preventDefault();
+  popupLoading.classList.add("active");
+});
   </script>
 </html>

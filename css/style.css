@@ -395,7 +395,8 @@
 .popup_filter,
 .add_message,
 .add_courses,
-.popup_import {
+.popup_import,
+.popup_export {
   position: fixed;
   max-width: 550px;
   width: 90%;
@@ -412,14 +413,16 @@
 .popup_filter.active,
 .add_message.active,
 .add_courses.active,
-.popup_import.active {
+.popup_import.active,
+.popup_export.active {
   display: block;
 }
 .add_client .head,
 .popup_filter .head,
 .add_message .head,
 .add_courses .head,
-.popup_import .head {
+.popup_import .head,
+.popup_export .head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,7 +439,8 @@
 .popup_filter .head h3,
 .add_message .head h3,
 .add_courses .head h3,
-.popup_import .head h3 {
+.popup_import .head h3,
+.popup_export .head h3 {
   margin-bottom: 0;
   font-size: 20px;
   display: -webkit-box;
@@ -452,7 +456,8 @@
 .popup_filter .head h3 span,
 .add_message .head h3 span,
 .add_courses .head h3 span,
-.popup_import .head h3 span {
+.popup_import .head h3 span,
+.popup_export .head h3 span {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -471,7 +476,8 @@
 .popup_filter .head h3 span i,
 .add_message .head h3 span i,
 .add_courses .head h3 span i,
-.popup_import .head h3 span i {
+.popup_import .head h3 span i,
+.popup_export .head h3 span i {
   color: #e2852d;
   font-size: 17px;
 }
@@ -479,7 +485,8 @@
 .popup_filter .head i,
 .add_message .head i,
 .add_courses .head i,
-.popup_import .head i {
+.popup_import .head i,
+.popup_export .head i {
   font-size: 20px;
   cursor: pointer;
 }
@@ -487,14 +494,16 @@
 .popup_filter form,
 .add_message form,
 .add_courses form,
-.popup_import form {
+.popup_import form,
+.popup_export form {
   padding: 10px 15px;
 }
 .add_client form .input_item,
 .popup_filter form .input_item,
 .add_message form .input_item,
 .add_courses form .input_item,
-.popup_import form .input_item {
+.popup_import form .input_item,
+.popup_export form .input_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -509,7 +518,8 @@
 .popup_filter form .input_item label,
 .add_message form .input_item label,
 .add_courses form .input_item label,
-.popup_import form .input_item label {
+.popup_import form .input_item label,
+.popup_export form .input_item label {
   font-size: 15px;
   font-weight: 500;
   color: #324664;
@@ -528,7 +538,10 @@
 .add_courses form .input_item textarea,
 .popup_import form .input_item input,
 .popup_import form .input_item select,
-.popup_import form .input_item textarea {
+.popup_import form .input_item textarea,
+.popup_export form .input_item input,
+.popup_export form .input_item select,
+.popup_export form .input_item textarea {
   border: 1px solid rgb(195, 195, 195);
   padding: 5px;
   border-radius: 4px;
@@ -538,14 +551,16 @@
 .popup_filter form .input_item textarea,
 .add_message form .input_item textarea,
 .add_courses form .input_item textarea,
-.popup_import form .input_item textarea {
+.popup_import form .input_item textarea,
+.popup_export form .input_item textarea {
   height: 100px;
 }
 .add_client form .input_file span,
 .popup_filter form .input_file span,
 .add_message form .input_file span,
 .add_courses form .input_file span,
-.popup_import form .input_file span {
+.popup_import form .input_file span,
+.popup_export form .input_file span {
   font-size: 15px;
   font-weight: 500;
 }
@@ -553,7 +568,8 @@
 .popup_filter form .input_file label,
 .add_message form .input_file label,
 .add_courses form .input_file label,
-.popup_import form .input_file label {
+.popup_import form .input_file label,
+.popup_export form .input_file label {
   padding: 8px;
   background: #eff1f6;
   font-size: 15px;
@@ -566,21 +582,24 @@
 .popup_filter form .input_file input,
 .add_message form .input_file input,
 .add_courses form .input_file input,
-.popup_import form .input_file input {
+.popup_import form .input_file input,
+.popup_export form .input_file input {
   display: none;
 }
 .add_client form .input_checkbox,
 .popup_filter form .input_checkbox,
 .add_message form .input_checkbox,
 .add_courses form .input_checkbox,
-.popup_import form .input_checkbox {
+.popup_import form .input_checkbox,
+.popup_export form .input_checkbox {
   margin-bottom: 10px;
 }
 .add_client form .input_checkbox label,
 .popup_filter form .input_checkbox label,
 .add_message form .input_checkbox label,
 .add_courses form .input_checkbox label,
-.popup_import form .input_checkbox label {
+.popup_import form .input_checkbox label,
+.popup_export form .input_checkbox label {
   font-size: 15px;
   font-weight: 500;
   color: #324664;
@@ -589,21 +608,24 @@
 .popup_filter form .input-group,
 .add_message form .input-group,
 .add_courses form .input-group,
-.popup_import form .input-group {
+.popup_import form .input-group,
+.popup_export form .input-group {
   direction: ltr;
 }
 .add_client form .input-group .input-group-text,
 .popup_filter form .input-group .input-group-text,
 .add_message form .input-group .input-group-text,
 .add_courses form .input-group .input-group-text,
-.popup_import form .input-group .input-group-text {
+.popup_import form .input-group .input-group-text,
+.popup_export form .input-group .input-group-text {
   position: relative;
 }
 .add_client form .input-group .input-group-text::after,
 .popup_filter form .input-group .input-group-text::after,
 .add_message form .input-group .input-group-text::after,
 .add_courses form .input-group .input-group-text::after,
-.popup_import form .input-group .input-group-text::after {
+.popup_import form .input-group .input-group-text::after,
+.popup_export form .input-group .input-group-text::after {
   content: "filter";
   margin-left: 5px;
   color: #324664;
@@ -613,7 +635,8 @@
 .popup_filter form .btn_add,
 .add_message form .btn_add,
 .add_courses form .btn_add,
-.popup_import form .btn_add {
+.popup_import form .btn_add,
+.popup_export form .btn_add {
   background-color: #1362fc;
   padding: 7px;
   color: white;
@@ -702,6 +725,145 @@
     border-radius: 4px;
   }
 }
+.popup_loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.602);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 100;
+  display: none;
+}
+.popup_loading.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.popup_loading p {
+  font-size: 18px;
+  color: white;
+}
+.popup_loading .lds-roller {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.popup_loading .lds-roller div {
+  -webkit-animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite forwards;
+          animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite forwards;
+  -webkit-transform-origin: 40px 40px;
+          transform-origin: 40px 40px;
+}
+.popup_loading .lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -4px 0 0 -4px;
+}
+.popup_loading .lds-roller div:nth-child(1) {
+  -webkit-animation-delay: -0.036s;
+          animation-delay: -0.036s;
+}
+.popup_loading .lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.popup_loading .lds-roller div:nth-child(2) {
+  -webkit-animation-delay: -0.072s;
+          animation-delay: -0.072s;
+}
+.popup_loading .lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.popup_loading .lds-roller div:nth-child(3) {
+  -webkit-animation-delay: -0.108s;
+          animation-delay: -0.108s;
+}
+.popup_loading .lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.popup_loading .lds-roller div:nth-child(4) {
+  -webkit-animation-delay: -0.144s;
+          animation-delay: -0.144s;
+}
+.popup_loading .lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.popup_loading .lds-roller div:nth-child(5) {
+  -webkit-animation-delay: -0.18s;
+          animation-delay: -0.18s;
+}
+.popup_loading .lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.popup_loading .lds-roller div:nth-child(6) {
+  -webkit-animation-delay: -0.216s;
+          animation-delay: -0.216s;
+}
+.popup_loading .lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.popup_loading .lds-roller div:nth-child(7) {
+  -webkit-animation-delay: -0.252s;
+          animation-delay: -0.252s;
+}
+.popup_loading .lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.popup_loading .lds-roller div:nth-child(8) {
+  -webkit-animation-delay: -0.288s;
+          animation-delay: -0.288s;
+}
+.popup_loading .lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@-webkit-keyframes lds-roller {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes lds-roller {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .main_content_tables {
   height: calc(100vh - 56px);
   overflow-y: auto;
